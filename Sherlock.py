@@ -9,12 +9,8 @@ class solucion:
         self.aux=self.diccionario[self.c]
 
     def verificacion(self): #Esta funcion verifica que la cadena ingresada sea valida
-        if "!" in self.cadena:
-            return "\nIngrese una cadena\n de letras minusculas"
 
-        cadena = self.cadena + "!"
-
-        if not re.match(r"^[a-z]{1,100000}!", cadena):
+        if not re.fullmatch(r"^[a-z]{1,100000}", self.cadena):
             return "\nIngresar una cadena\n de letras minusculas"
         else:
             return None
