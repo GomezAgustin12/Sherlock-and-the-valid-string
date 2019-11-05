@@ -63,8 +63,13 @@ class Ui_MainWindow(object):
 
     def send(self):
         solucion = Sherlock.solucion(self.lineEdit.text())
-        aux = solucion.soluc()
-        self.validacion.setText(aux)
+        if solucion.verificacion():
+            aux= solucion.verificacion()
+            self.validacion.setText(aux)
+            self.validacion.adjustSize()
+        else:
+            aux = solucion.soluc()
+            self.validacion.setText(aux)
 
 if __name__ == "__main__":
     import sys
