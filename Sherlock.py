@@ -1,12 +1,15 @@
 from collections import Counter
+import re
 
 class solucion:
     def __init__(self, cadena):
-        self.cadena= cadena
+        self.cadena=cadena
         self.diccionario=dict(Counter(cadena))
         self.c=self.cadena[0]
         self.aux=self.diccionario[self.c]
 
+    def verificacion(self, cadena):
+        pass
 
     def step1(self):
         for i in self.diccionario:
