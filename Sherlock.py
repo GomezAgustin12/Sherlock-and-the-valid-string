@@ -13,9 +13,9 @@ class solucion:
             return "\nIngrese una cadena\n de letras minusculas"
 
         cadena = self.cadena + "!"
-        
+
         if not re.match(r"^[a-z]{1,100000}!", cadena):
-            return "\nIngrese una cadena\n de letras minusculas"
+            return "\nIngresar una cadena\n de letras minusculas"
         else:
             return None
 
