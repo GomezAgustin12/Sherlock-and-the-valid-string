@@ -10,7 +10,7 @@ class solucion:
 
     def verificacion(self): #Esta funcion verifica que la cadena ingresada sea valida
         cadena = self.cadena + "!"
-        if not re.match(r"^[a-zA-Z]{1,100000}!", cadena):
+        if not re.match(r"^[a-z]{1,100000}!", cadena):
             return "\nIngrese una cadena\n de letras"
         else:
             return None
