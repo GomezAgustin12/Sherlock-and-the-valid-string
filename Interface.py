@@ -58,7 +58,7 @@ class Ui_MainWindow(object):
         MainWindow.setWindowIcon(QtGui.QIcon("Holmes.png"))
         self.Titulo.setText(_translate("MainWindow", "Ingrese una Cadena"))
         self.validacion.setText(_translate("MainWindow", "Validacion: "))
-        self.enter.setText(_translate("MainWindow", "(Precione Enter)"))
+        self.enter.setText(_translate("MainWindow", "(Presione Enter)"))
         self.principal_title.setText(_translate("MainWindow", "Sherlock and the valid string"))
 
     def send(self):
